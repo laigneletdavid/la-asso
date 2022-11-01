@@ -1,9 +1,9 @@
 <?php
 
-
+$content = './vue/accueil.phtml';
 include ('./layout/layout.phtml');
 
-$content = './vue/accueil.html';
+
 
 
 
