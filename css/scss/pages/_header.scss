@@ -1,3 +1,30 @@
-header {
+.header {
+   background-color: $primary;
+   border-bottom: solid 0.1rem $p-green;
    
+   .navbar a {
+        color: $secondary;
+        text-decoration: none;
+        padding: 0.5rem;
+
+   }
+   .navbar-brand {
+        color: $p-grey-light;
+   }
+}
+
+@include media-breakpoint-up(xs) {
+
+}
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
+
+}
+@include media-breakpoint-up(lg) {
+   
+}
+@include media-breakpoint-up(xl) {
+
 }
