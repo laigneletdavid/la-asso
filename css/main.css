@@ -10953,15 +10953,98 @@ body {
   background-color: #2D3540;
   border-bottom: solid 0.1rem #799906;
 }
-.header .navbar a {
-  color: #F29F05;
-  text-decoration: none;
-  padding: 0.5rem;
+.header .navbar {
+  flex-direction: row-reverse;
 }
-.header .navbar-brand {
-  color: #F2DDD0;
+.header .navbar .header-desk-view {
+  display: none;
+}
+.header .navbar .header-mobile-view {
+  display: flex;
+}
+.header .navbar .header-mobile-view .btn {
+  padding: 0.2rem 0.4rem;
+}
+.header .navbar .header-mobile-view .btn:hover .bi {
+  color: #2D3540;
+}
+.header .navbar .header-mobile-view .btn .bi {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.5em;
+  color: #F29F05;
+}
+.header .navbar .navbar-brand {
+  font-family: freight-micro-pro, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #F29F05;
+  padding: 0.5rem;
+  margin: 0;
+}
+.header .navbar .navbar-brand .bi {
+  width: 1.3em;
+  height: 1.3em;
+  font-size: 1.3em;
+  margin-right: 0.5rem;
+  display: none;
+}
+.header .offcanvas {
+  width: 70%;
+  opacity: 75%;
+}
+.header .offcanvas .offcanvas-title {
+  opacity: 100%;
+  font-family: freight-micro-pro, serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #F29F05;
+}
+.header .offcanvas .nav-item a {
+  text-decoration: none;
+  font-family: freight-micro-pro, serif;
+  text-transform: uppercase;
 }
 
+@media (min-width: 576px) {
+  .header .navbar .navbar-brand .bi {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .header .navbar {
+    flex-direction: row;
+  }
+  .header .navbar .header-desk-view {
+    display: block;
+  }
+  .header .navbar .header-desk-view .navbar-nav a {
+    color: #F29F05;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  .header .navbar .header-mobile-view {
+    display: none;
+  }
+  .header .navbar .navbar-nav .nav-item a {
+    font-family: freight-micro-pro, serif;
+    text-transform: uppercase;
+    transition: background-color 1s, border-radius 1.5s, color 0.2s;
+  }
+  .header .navbar .navbar-nav .nav-item a:hover {
+    background-color: #F29F05;
+    color: #2D3540;
+    border-radius: 0.3rem;
+    transition: background-color 1.5s;
+    transition: border-radius 2s;
+    transition: color 0.2s;
+  }
+  .header .navbar .navbar-nav .nav-item .activ {
+    background-color: #F29F05;
+    color: #2D3540;
+    border-radius: 0.3rem;
+  }
+}
 .footer {
   background-color: #2D3540;
   border-top: solid 0.1rem #799906;
