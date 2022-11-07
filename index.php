@@ -1,8 +1,11 @@
 <?php
 
+var_dump($_SERVER);
+exit;
 // Définition de la racine du site
 if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') {
     define('ROOT_URL', '//localhost/studi/la-asso');
+
 }
 else {
     define('ROOT_URL', '');
@@ -16,3 +19,5 @@ else {
     $content = './vue/accueil.phtml';   
 }
 include ('./layout/layout.phtml');
+
+
