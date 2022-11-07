@@ -10935,14 +10935,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html {
-  font-size: 16px;
-}
-
 body {
   font-family: haboro-contrast-normal, sans-serif;
 }
 
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
 @media (min-width: 992px) {
   .container-page {
     max-width: 1096px;
@@ -11045,6 +11050,30 @@ body {
     border-radius: 0.3rem;
   }
 }
+main .carousel {
+  margin: 1rem 0;
+}
+main .carousel .carousel-control .bi {
+  width: 1.3em;
+  height: 1.3em;
+  font-size: 1.3em;
+}
+main section {
+  margin: 1rem 0;
+}
+main .title-page {
+  font-family: freight-macro-pro, serif;
+  font-weight: 600;
+  color: #F28907;
+}
+main .word-content {
+  max-width: 90%;
+  margin: auto;
+}
+main .word-content .word-text {
+  text-align: center;
+}
+
 .footer {
   background-color: #2D3540;
   border-top: solid 0.1rem #799906;
