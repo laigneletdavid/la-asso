@@ -1,14 +1,11 @@
 <?php
 
-var_dump($_SERVER);
-
 // Définition de la racine du site
 if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') {
     define('ROOT_URL', '//localhost/studi/la-asso');
-
 }
 else {
-    define('ROOT_URL', '.');
+    define('ROOT_URL', '');
 }
 
 // Affichage du contenu de la page en cours
