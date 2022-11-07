@@ -1,3 +1,43 @@
 main {
+    .carousel {
+        margin: 1rem 0;
+
+        .carousel-control {
+            .bi {
+                width: 1.3em;
+                height: 1.3em;
+                font-size: 1.3em;
+            }
+        }
+    }
+    section {
+        margin: 1rem 0;
+    }
+    .title-page {
+        @include title-page;
+    }
+    .word-content {
+        max-width: 90%;
+        margin: auto;
+
+        .word-text {
+            text-align: center;
+        }
+    }
+}
+
+@include media-breakpoint-up(xs) {
+    
+}
+@include media-breakpoint-up(sm) {
+
+}
+@include media-breakpoint-up(md) {
   
+}
+@include media-breakpoint-up(lg) {
+    
+}
+@include media-breakpoint-up(xl) {
+
 }

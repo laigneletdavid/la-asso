@@ -23,3 +23,8 @@ $secondary: $p-orange-xlight;
 
 // Mixin
 
+@mixin title-page {
+    font-family: freight-macro-pro, serif;
+    font-weight: 600;
+    color: $p-orange-light;
+}
