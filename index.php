@@ -8,7 +8,7 @@ if (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == 'localhost') {
 
 }
 else {
-    define('ROOT_URL', '..');
+    define('ROOT_URL', '.');
 }
 
 // Affichage du contenu de la page en cours
