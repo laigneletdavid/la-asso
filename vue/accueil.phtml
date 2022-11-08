@@ -27,11 +27,13 @@
             </a>
         </section>
 
-        <section class="word d-flex flex-column justify-content-center">
+        <section class="word d-flex flex-column align-items-center">
             <h2 class="word-title title-page">Faisons de la photo ensemble</h2>
-            <div class="word-content d-flex flex-column">
-                <p class="word-text">La pratique de la photographie est souvent une activitée solitaire, mais quand c'est le cas, progresser demande du temps. Le but du Pied à l'Objectif est de pratiquer la photo à plusieurs afin de s'aider à progresser</p>
-                <p class="word-text">L'association propose ses activités à tous et toutes et nous espérons bientôt ouvrir une section "Jeunes Photographes" afin d'acompagner des jeunes dans la pratique de la photographie.</p>
+            <div class="word-content d-flex flex-column flex-md-row align-items-md-center">
+                <div class="word-text-content">
+                    <p class="word-text">La pratique de la photographie est souvent une activitée solitaire, mais quand c'est le cas, progresser demande du temps. Le but du Pied à l'Objectif est de pratiquer la photo à plusieurs afin de s'aider à progresser</p>
+                    <p class="word-text">L'association propose ses activités à tous et toutes et nous espérons bientôt ouvrir une section "Jeunes Photographes" afin d'acompagner des jeunes dans la pratique de la photographie.</p>
+                </div>
                 <img src="<?= ROOT_URL ?>/documents/images/word-photo.jpg" alt="Le pied à l'objectif - Faisons de la photo ensembel" class="word-img">
             </div>
         </section>
@@ -39,20 +41,37 @@
         <section class="reinsurance d-flex flex-column align-items-center">
             <h2 class="reinsurance-title title-page">Les actions de l'association</h2>
             <div class="reinsurance-content-list">
-                <ul class="reinsurance-list d-flex flex-colmun justify-content-between align-items-center">
+                <ul class="reinsurance-list d-flex flex-column flex-md-row justify-content-between align-items-center hstack gap-3">
                     <li class="reinsurance-item d-flew flex-column">
-                        <h3 class="reinsurance-item-title">Bla</h3>
-                        <p class="reinsurance-item-text"></p>
+                        <div class="reinsurance-content-title d-flex flex-row align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                            </svg>
+                            <h3 class="reinsurance-item-title">Sorties</h3>
+                        </div>
+                        <p class="reinsurance-item-text">De manière régulière, nous effecturons des sorties photo de groupe sur des thèmes différnets, nature, architecture, urbex,...</p>
 
                     </li>
                     <li class="reinsurance-item d-flew flex-column">
-                        <h3 class="reinsurance-item-title">Bla</h3>
-                        <p class="reinsurance-item-text"></p>
+                        <div class="reinsurance-content-title d-flex flex-row  align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg>
+                            <h3 class="reinsurance-item-title">Stages</h3>
+                        </div>
+                        <p class="reinsurance-item-text">Les stages seront l'occasion de travailler des techniques de prise de vue et d'apprendfre à maîtriser son appareil photo</p>
 
                     </li>
                     <li class="reinsurance-item d-flew flex-column">
-                        <h3 class="reinsurance-item-title">Bla</h3>
-                        <p class="reinsurance-item-text"></p>
+                        <div class="reinsurance-content-title d-flex flex-row  align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                            <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                        </svg>
+                            <h3 class="reinsurance-item-title">Soirées</h3>
+                        </div>
+                        <p class="reinsurance-item-text">De manière très régulière, l'association organisera des soirée de projection, ou nous étudirons les photos prises lors des sorties ou des stages.</p>
 
                     </li>
                 </ul>
