@@ -1,0 +1,75 @@
+main {
+    .carousel {
+        margin: 1rem 0;
+
+        .carousel-control {
+            .bi {
+                width: 1.3em;
+                height: 1.3em;
+                font-size: 1.3em;
+            }
+        }
+    }
+    section {
+        padding: 1rem 0;
+    }
+    .title-page {
+        @include title-page;
+    }
+    .word {
+        background-color: $p-grey-light;
+        padding: 1rem;
+        border-radius: 1rem;
+        
+        .word-content {
+            max-width: 90%;
+            margin: auto;
+    
+            .word-text {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+
+            .word-img {
+                border-radius: 10rem 3rem 5rem 1rem;
+            }
+        }
+    }
+    
+}
+
+@include media-breakpoint-up(xs) {
+    
+}
+@include media-breakpoint-up(sm) {
+    .word {
+        .word-img {
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+}
+@include media-breakpoint-up(md) {
+  
+    .word {
+        .word-text-content {
+            margin: 1rem 2rem 1rem 0;
+            
+        }
+        .word-img {
+            max-width: 50%;
+            margin: auto;
+            padding: 1rem 0;
+        }
+    }
+    
+}
+@include media-breakpoint-up(lg) {
+    main .word .word-content .word-text {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+@include media-breakpoint-up(xl) {
+
+}
