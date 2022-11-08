@@ -1,25 +1,21 @@
 // Find here the globals sccs 
 
-
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: haboro-contrast-normal, sans-serif;
 }
 
-
-
 @include media-breakpoint-up(xs) {
-    html {
-        font-size: 14px;
-    }
+    
 }
 @include media-breakpoint-up(sm) {
 
 }
 @include media-breakpoint-up(md) {
-    html {
-        font-size: 16px;
-    }
+    
 }
 @include media-breakpoint-up(lg) {
     .container-page {

@@ -10935,19 +10935,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: haboro-contrast-normal, sans-serif;
 }
 
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
 @media (min-width: 992px) {
   .container-page {
     max-width: 1096px;
@@ -10956,7 +10951,7 @@ html {
 }
 .header {
   background-color: #2D3540;
-  border-bottom: solid 0.1rem #799906;
+  border-bottom: solid 0.15rem #799906;
 }
 .header .navbar {
   flex-direction: row-reverse;
@@ -11035,6 +11030,7 @@ html {
     font-family: freight-micro-pro, serif;
     text-transform: uppercase;
     transition: background-color 1s, border-radius 1.5s, color 0.2s;
+    font-size: 1.2em;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
     background-color: #F29F05;
@@ -11050,6 +11046,12 @@ html {
     border-radius: 0.3rem;
   }
 }
+.footer {
+  background-color: #2D3540;
+  border-top: solid 0.1rem #799906;
+  color: #F2DDD0;
+}
+
 main .carousel {
   margin: 1rem 0;
 }
@@ -11059,23 +11061,80 @@ main .carousel .carousel-control .bi {
   font-size: 1.3em;
 }
 main section {
-  margin: 1rem 0;
+  padding: 1rem 0;
 }
 main .title-page {
   font-family: freight-macro-pro, serif;
   font-weight: 600;
   color: #F28907;
 }
-main .word-content {
+main .word {
+  background-color: #F2DDD0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main .word .word-content {
   max-width: 90%;
   margin: auto;
 }
-main .word-content .word-text {
+main .word .word-content .word-text {
   text-align: center;
+  font-size: 1.1rem;
+}
+main .word .word-content .word-img {
+  border-radius: 10rem 3rem 5rem 1rem;
+}
+main .reinsurance .reinsurance-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+main .reinsurance .reinsurance-list .reinsurance-item {
+  background-color: #F29F05;
+  color: #fff;
+  border-radius: 0 2rem 2rem 2rem;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  opacity: 80%;
+  transition: background-color 1s, color 0.2s;
+}
+main .reinsurance .reinsurance-list .reinsurance-item .bi {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1.3em;
+}
+main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-title {
+  margin: 0;
+  padding-left: 0.5rem;
+}
+main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-text {
+  margin-left: 1rem;
 }
 
-.footer {
-  background-color: #2D3540;
-  border-top: solid 0.1rem #799906;
-  color: #F2DDD0;
+@media (min-width: 576px) {
+  .word .word-img {
+    max-width: 60%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .word .word-text-content {
+    margin: 1rem 2rem 1rem 0;
+  }
+  .word .word-img {
+    max-width: 50%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  .reinsurance .reinsurance-list .reinsurance-item:hover {
+    background-color: #F2DDD0;
+    color: #F25C05;
+    transition: background-color 1s, color 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  main .word .word-content .word-text {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
