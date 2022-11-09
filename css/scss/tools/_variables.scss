@@ -38,3 +38,9 @@ $secondary: $p-orange-xlight;
     opacity: 80%;
 
 }
+
+@mixin font-btn {
+    font-family: freight-display-pro, serif;
+    text-transform: uppercase;
+    color: $p-grey-light;
+}
