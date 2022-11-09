@@ -11132,6 +11132,9 @@ main .where iframe {
 main .where .where-text-content {
   margin: 1rem;
 }
+main .where .where-text-content .where-text {
+  text-align: center;
+}
 main .where .btn {
   font-family: freight-display-pro, serif;
   text-transform: uppercase;
