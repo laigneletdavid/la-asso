@@ -11104,17 +11104,59 @@ main .reinsurance .reinsurance-list .reinsurance-item .bi {
   font-size: 1.3em;
 }
 main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-title {
+  font-family: freight-display-pro, serif;
+  font-weight: 600;
   margin: 0;
   padding-left: 0.5rem;
 }
 main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-text {
   margin-left: 1rem;
 }
+main .article .card .card-body {
+  background-color: #F2DDD0;
+}
+main .article .card .card-body .card-title {
+  font-family: freight-display-pro, serif;
+  font-weight: 600;
+}
+main .article .card .card-body .btn {
+  font-family: freight-display-pro, serif;
+  text-transform: uppercase;
+  color: #F2DDD0;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+main .where iframe {
+  max-width: 90%;
+  max-height: 400px;
+}
+main .where .where-text-content {
+  margin: 1rem;
+  text-align: center;
+}
+main .where .btn {
+  font-family: freight-display-pro, serif;
+  text-transform: uppercase;
+  color: #F2DDD0;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+main .where .btn a {
+  color: #F2DDD0;
+  text-decoration: none;
+}
 
 @media (min-width: 576px) {
   .word .word-img {
     max-width: 60%;
     margin: auto;
+  }
+  .article .article-content .card {
+    max-width: 45%;
+  }
+  .article .article-content .card .card-text {
+    height: 8rem;
+  }
+  main .where .where-text-content {
+    margin: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -11131,10 +11173,24 @@ main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-text {
     color: #F25C05;
     transition: background-color 1s, color 0.2s;
   }
+  .article .article-content .card .btn:hover {
+    background-color: #F29F05;
+    border-color: #F29F05;
+    color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  }
+  .where .btn:hover {
+    background-color: #2D3540;
+    border-color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  }
 }
 @media (min-width: 992px) {
   main .word .word-content .word-text {
     font-size: 1.2rem;
     padding: 1rem;
+  }
+  .article .article-content .card .card-text {
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */
