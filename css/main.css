@@ -11104,17 +11104,34 @@ main .reinsurance .reinsurance-list .reinsurance-item .bi {
   font-size: 1.3em;
 }
 main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-title {
+  font-family: freight-display-pro, serif;
+  font-weight: 600;
   margin: 0;
   padding-left: 0.5rem;
 }
 main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-text {
   margin-left: 1rem;
 }
+main .article .card .card-body {
+  background-color: #F2DDD0;
+}
+main .article .card .card-body .card-title {
+  font-family: freight-display-pro, serif;
+  font-weight: 600;
+}
+main .article .card .card-body .btn {
+  font-family: freight-display-pro, serif;
+  text-transform: uppercase;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
 
 @media (min-width: 576px) {
   .word .word-img {
     max-width: 60%;
     margin: auto;
+  }
+  .article .article-content .card {
+    max-width: 45%;
   }
 }
 @media (min-width: 768px) {
@@ -11130,6 +11147,12 @@ main .reinsurance .reinsurance-list .reinsurance-item .reinsurance-item-text {
     background-color: #F2DDD0;
     color: #F25C05;
     transition: background-color 1s, color 0.2s;
+  }
+  .article .article-content .card .btn:hover {
+    background-color: #F29F05;
+    border-color: #F29F05;
+    color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
 }
 @media (min-width: 992px) {
