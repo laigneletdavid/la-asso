@@ -11122,7 +11122,26 @@ main .article .card .card-body .card-title {
 main .article .card .card-body .btn {
   font-family: freight-display-pro, serif;
   text-transform: uppercase;
+  color: #F2DDD0;
   transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+main .where iframe {
+  max-width: 90%;
+  max-height: 400px;
+}
+main .where .where-text-content {
+  margin: 1rem;
+  text-align: center;
+}
+main .where .btn {
+  font-family: freight-display-pro, serif;
+  text-transform: uppercase;
+  color: #F2DDD0;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+main .where .btn a {
+  color: #F2DDD0;
+  text-decoration: none;
 }
 
 @media (min-width: 576px) {
@@ -11132,6 +11151,12 @@ main .article .card .card-body .btn {
   }
   .article .article-content .card {
     max-width: 45%;
+  }
+  .article .article-content .card .card-text {
+    height: 8rem;
+  }
+  main .where .where-text-content {
+    margin: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -11154,10 +11179,18 @@ main .article .card .card-body .btn {
     color: #2D3540;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
+  .where .btn:hover {
+    background-color: #2D3540;
+    border-color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  }
 }
 @media (min-width: 992px) {
   main .word .word-content .word-text {
     font-size: 1.2rem;
     padding: 1rem;
+  }
+  .article .article-content .card .card-text {
+    height: auto;
   }
 }/*# sourceMappingURL=main.css.map */

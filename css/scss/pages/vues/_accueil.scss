@@ -29,7 +29,6 @@ main {
                 text-align: center;
                 font-size: 1.1rem;
             }
-
             .word-img {
                 border-radius: 10rem 3rem 5rem 1rem;
             }
@@ -64,7 +63,6 @@ main {
 
         }
     }
-
     .article {
         
         .card .card-body {
@@ -74,12 +72,30 @@ main {
                 font-weight: 600;
             }
             .btn {
-                font-family: freight-display-pro, serif;
-                text-transform: uppercase;
+                @include font-btn;
                 transition: background-color 0.5s, border-color 0.5s, color 0.2s;
             }
         }
         
+    }
+    .where {
+        iframe {
+            max-width: 90%;
+            max-height: 400px;
+        }
+        .where-text-content {
+            margin: 1rem;
+            text-align: center;
+        }
+        .btn {
+            @include font-btn;
+            transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+
+            a {
+                color: $p-grey-light;
+                text-decoration: none;
+            }
+        }
     }
     
 }
@@ -96,6 +112,12 @@ main {
     }
     .article .article-content .card {
         max-width: 45%;
+        .card-text {
+            height: 8rem;
+        }
+    }
+    main .where .where-text-content {
+        margin: 2rem;
     }
 }
 @include media-breakpoint-up(md) {
@@ -121,11 +143,21 @@ main {
         }
     }
     
-    .article .article-content .card .btn {
+    .article .article-content .card {
+        .btn {
+            &:hover {
+                background-color: $p-orange-xlight;
+                border-color: $p-orange-xlight;
+                color: $primary;
+                transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+            }
+        }
+    }
+
+    .where .btn {
         &:hover {
-            background-color: $p-orange-xlight;
-            border-color: $p-orange-xlight;
-            color: $primary;
+            background-color: $primary;
+            border-color: $primary;
             transition: background-color 0.5s, border-color 0.5s, color 0.2s;
         }
     }
@@ -134,6 +166,9 @@ main {
     main .word .word-content .word-text {
         font-size: 1.2rem;
         padding: 1rem;
+    }
+    .article .article-content .card .card-text {
+            height: auto;
     }
 }
 @include media-breakpoint-up(xl) {
