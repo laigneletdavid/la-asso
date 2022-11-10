@@ -68,7 +68,7 @@ main {
         .card .card-body {
             background-color: $p-grey-light;
             .card-title {
-                font-family: freight-display-pro, serif;
+                font-family: freight-micro-pro, serif;
                 font-weight: 600;
             }
             .btn {
@@ -92,7 +92,7 @@ main {
             transition: background-color 0.5s, border-color 0.5s, color 0.2s;
 
             a {
-                color: $p-grey-light;
+                color: $white;
                 text-decoration: none;
             }
         }
