@@ -24,7 +24,7 @@ $secondary: $p-orange-xlight;
 // Mixin
 
 @mixin title-page {
-    font-family: freight-macro-pro, serif;
+    font-family: freight-micro-pro, serif;
     font-weight: 600;
     color: $p-orange-light;
 }
@@ -43,4 +43,6 @@ $secondary: $p-orange-xlight;
     font-family: freight-display-pro, serif;
     text-transform: uppercase;
     color: $p-grey-light;
+    font-size: 1.2rem;
+    color: $white;
 }
