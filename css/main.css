@@ -10951,7 +10951,7 @@ body {
 }
 .header {
   background-color: #2D3540;
-  border-bottom: solid 0.15rem #799906;
+  border-bottom: solid 0.1rem #799906;
 }
 .header .navbar {
   flex-direction: row-reverse;
@@ -11030,7 +11030,6 @@ body {
     font-family: freight-micro-pro, serif;
     text-transform: uppercase;
     transition: background-color 1s, border-radius 1.5s, color 0.2s;
-    font-size: 1.2em;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
     background-color: #F29F05;
@@ -11182,6 +11181,62 @@ main .where .btn a {
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
   .where .btn:hover {
+    background-color: #2D3540;
+    border-color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  main .word .word-content .word-text {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  .article .article-content .card .card-text {
+    height: auto;
+  }
+}
+main .ariane {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+main .title-page {
+  font-family: freight-macro-pro, serif;
+  font-weight: 600;
+  color: #F28907;
+}
+main .event-text {
+  margin: 0.5rem 1rem;
+  text-align: justify;
+}
+main .event-header .event-title {
+  font-family: freight-macro-pro, serif;
+  font-weight: 600;
+  border-bottom: solid 0.15rem #799906;
+}
+main .event-header .event-picture {
+  max-width: 90%;
+  margin: auto;
+}
+main .event-where .event-where-map {
+  max-width: 90%;
+  margin: 1rem auto;
+  max-height: 350px;
+}
+main .btn {
+  width: auto;
+  font-family: freight-display-pro, serif;
+  text-transform: uppercase;
+  color: #F2DDD0;
+  margin: 1rem auto;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+main .btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .btn:hover {
     background-color: #2D3540;
     border-color: #2D3540;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
