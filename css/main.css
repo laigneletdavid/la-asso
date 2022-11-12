@@ -10951,7 +10951,7 @@ body {
 }
 .header {
   background-color: #2D3540;
-  border-bottom: solid 0.15rem #799906;
+  border-bottom: solid 0.1rem #799906;
 }
 .header .navbar {
   flex-direction: row-reverse;
@@ -11030,7 +11030,6 @@ body {
     font-family: freight-micro-pro, serif;
     text-transform: uppercase;
     transition: background-color 1s, border-radius 1.5s, color 0.2s;
-    font-size: 1.2em;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
     background-color: #F29F05;
@@ -11133,6 +11132,8 @@ main .where iframe {
 }
 main .where .where-text-content {
   margin: 1rem;
+}
+main .where .where-text-content .where-text {
   text-align: center;
 }
 main .where .btn {
@@ -11187,15 +11188,6 @@ main .where .btn a {
     background-color: #2D3540;
     border-color: #2D3540;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
-  }
-}
-@media (min-width: 992px) {
-  main .word .word-content .word-text {
-    font-size: 1.2rem;
-    padding: 1rem;
-  }
-  .article .article-content .card .card-text {
-    height: auto;
   }
 }
 @media (min-width: 992px) {
