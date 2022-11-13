@@ -3,17 +3,40 @@
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Contactez-nous</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Formulaire de contact
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
-                <button type="button" class="btn btn-primary">Envoyer</button>
-            </div>
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Contactez-nous</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="modal-contact">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Votre message</label>
+                            <textarea class="form-control" id="message" rows="6"></textarea>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                            <button type="submit" id="contact" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
@@ -22,14 +45,19 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Dev in Progress</h1>
+                <h1 class="modal-title" id="exampleModalLabel">Dev in Progress</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
-                    <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
-                </svg>
-                <p class="modal-body-text">Nous sommes désolés mais cette partie est encore en développement ! Nous faisons tout notre possible pour qu'elle soit rapidement opérationnelle, merci de votre compréhention.</p>
+            <div class="modal-body d-flex flex-row align-items-center vstack gap-3">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                        <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
+                    </svg>
+                </div>
+                <div>
+                <p class="modal-body-text">Nous sommes désolés mais cette partie est encore en développement !</p>  
+                <p class="modal-body-text">Nous faisons tout notre possible pour qu'elle soit rapidement opérationnelle, merci de votre compréhention.</p>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
@@ -42,16 +70,43 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Réservation</h1>
+                <h1 class="modal-title" id="exampleModalLabel">Réservation</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="modal-body-text">Formulaire de réservation.</p>
+                <form action="#" method="post" class="modal-contact">
+                    <div class="mb-3">
+                        <label for="outing" class="form-label">Sortie</label>
+                        <input type="text" class="form-control" id="outing" placeholder="Sortie montage de printemps" disabled>
+                    </div>
+                    <div class="mb-3">
+                            <label for="name" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                    <div class="mb-3">
+                        <label for="firstname" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="firstname">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="attendees" class="form-label">Nombre de participants</label>
+                        <input type="int" class="form-control" id="attendees">
+                    </div>
+                    <div class="mb-3">
+                        <label for="data" class="form-label">Informations complémnetaires</label>
+                        <textarea class="form-control" id="data" rows="3"></textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                        <button type="submit" id="reserv" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
-                <button type="button" class="btn btn-primary">Envoyer</button>
-            </div>
+            
             </div>
         </div>
     </div>
