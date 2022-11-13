@@ -10951,7 +10951,7 @@ body {
 }
 .header {
   background-color: #2D3540;
-  border-bottom: solid 0.1rem #799906;
+  border-bottom: solid 0.15rem #799906;
 }
 .header .navbar {
   flex-direction: row-reverse;
@@ -11030,6 +11030,7 @@ body {
     font-family: freight-micro-pro, serif;
     text-transform: uppercase;
     transition: background-color 1s, border-radius 1.5s, color 0.2s;
+    font-size: 1.2em;
   }
   .header .navbar .navbar-nav .nav-item a:hover {
     background-color: #F29F05;
@@ -11047,8 +11048,21 @@ body {
 }
 .footer {
   background-color: #2D3540;
-  border-top: solid 0.1rem #799906;
+  border-top: solid 0.2rem #799906;
   color: #F2DDD0;
+  padding: 1rem 0;
+}
+.footer .name {
+  text-transform: uppercase;
+}
+.footer .studi {
+  width: 8rem;
+  padding: 0.4rem;
+  margin: 0.5rem;
+  background-color: #fff;
+}
+.footer span {
+  text-align: center;
 }
 
 main .carousel {
@@ -11181,7 +11195,6 @@ main .where .btn a {
   .article .article-content .card .btn:hover {
     background-color: #F29F05;
     border-color: #F29F05;
-    color: #2D3540;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
   .where .btn:hover {
@@ -11204,7 +11217,7 @@ main .ariane {
   font-size: 0.8rem;
 }
 main .title-page {
-  font-family: freight-macro-pro, serif;
+  font-family: freight-micro-pro, serif;
   font-weight: 600;
   color: #F28907;
 }
@@ -11231,6 +11244,8 @@ main .btn {
   font-family: freight-display-pro, serif;
   text-transform: uppercase;
   color: #F2DDD0;
+  font-size: 1.2rem;
+  color: #fff;
   margin: 1rem auto;
   transition: background-color 0.5s, border-color 0.5s, color 0.2s;
 }
@@ -11254,4 +11269,35 @@ main .btn a {
   .article .article-content .card .card-text {
     height: auto;
   }
+}
+.modal-header .modal-title {
+  font-family: freight-micro-pro, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #F29F05;
+}
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+}
+
+.btn-primary {
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #F29F05;
+  border-color: #F29F05;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+
+.modal-body .bi {
+  width: 5rem;
+  height: 5rem;
+  font-size: 5rem;
+  color: #F29F05;
 }/*# sourceMappingURL=main.css.map */

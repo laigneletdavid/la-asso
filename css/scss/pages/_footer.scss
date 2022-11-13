@@ -1,6 +1,21 @@
 .footer {
     background-color: $primary;
-    border-top: solid 0.1rem $p-green;
+    border-top: solid 0.2rem $p-green;
     color: $p-grey-light;
+    padding: 1rem 0;
 
+    .name {
+        text-transform: uppercase;
+    }
+
+    .studi {
+        width: 8rem;
+        padding: 0.4rem;
+        margin: 0.5rem;
+        background-color: #fff;
+    }
+    span {
+        text-align: center;
+    }
 }
+
