@@ -11061,6 +11061,9 @@ body {
   margin: 0.5rem;
   background-color: #fff;
 }
+.footer span {
+  text-align: center;
+}
 
 main .carousel {
   margin: 1rem 0;
@@ -11192,7 +11195,6 @@ main .where .btn a {
   .article .article-content .card .btn:hover {
     background-color: #F29F05;
     border-color: #F29F05;
-    color: #2D3540;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
   .where .btn:hover {
@@ -11267,4 +11269,35 @@ main .btn a {
   .article .article-content .card .card-text {
     height: auto;
   }
+}
+.modal-header .modal-title {
+  font-family: freight-micro-pro, serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #F29F05;
+}
+
+.btn {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+}
+
+.btn-primary {
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #F29F05;
+  border-color: #F29F05;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+}
+
+.modal-body .bi {
+  width: 5rem;
+  height: 5rem;
+  font-size: 5rem;
+  color: #F29F05;
 }/*# sourceMappingURL=main.css.map */
