@@ -11140,6 +11140,9 @@ main .article .card .card-body .btn {
   color: #fff;
   transition: background-color 0.5s, border-color 0.5s, color 0.2s;
 }
+main .article .card .card-body .btn-place {
+  width: 8rem;
+}
 main .where iframe {
   max-width: 90%;
   max-height: 400px;
