@@ -11212,9 +11212,8 @@ main .where .btn a {
     height: auto;
   }
 }
-main .ariane {
+main .breadcrumb {
   padding: 0.5rem 0;
-  font-size: 0.8rem;
 }
 main .title-page {
   font-family: freight-micro-pro, serif;
