@@ -11140,6 +11140,9 @@ main .article .card .card-body .btn {
   color: #fff;
   transition: background-color 0.5s, border-color 0.5s, color 0.2s;
 }
+main .article .card .card-body .btn-place {
+  width: 8rem;
+}
 main .where iframe {
   max-width: 90%;
   max-height: 400px;
@@ -11212,9 +11215,8 @@ main .where .btn a {
     height: auto;
   }
 }
-main .ariane {
+main .breadcrumb {
   padding: 0.5rem 0;
-  font-size: 0.8rem;
 }
 main .title-page {
   font-family: freight-micro-pro, serif;
@@ -11224,6 +11226,14 @@ main .title-page {
 main .event-text {
   margin: 0.5rem 1rem;
   text-align: justify;
+}
+main .nav-scroll {
+  border-radius: 1rem;
+}
+main .nav-scroll .nav-link {
+  font-family: freight-macro-pro, serif;
+  transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  margin: 0 0.5rem;
 }
 main .event-header .event-title {
   font-family: freight-macro-pro, serif;
@@ -11258,6 +11268,12 @@ main .btn a {
   .btn:hover {
     background-color: #2D3540;
     border-color: #2D3540;
+    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+  }
+  .nav-scroll .nav-link:hover {
+    background-color: #2D3540;
+    border-color: #2D3540;
+    color: #fff;
     transition: background-color 0.5s, border-color 0.5s, color 0.2s;
   }
 }
