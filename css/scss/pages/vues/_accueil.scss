@@ -10,8 +10,9 @@ main {
             }
         }
     }
-    section {
+    section, article {
         padding: 1rem 0;
+        margin-bottom: 1.5rem;
     }
     .title-page {
         @include title-page;
@@ -65,21 +66,23 @@ main {
     }
     .article {
         
-        .card .card-body {
-            background-color: $p-grey-light;
-            .card-title {
-                font-family: freight-micro-pro, serif;
-                font-weight: 600;
-            }
-            .btn {
-                @include font-btn;
-                transition: background-color 0.5s, border-color 0.5s, color 0.2s;
-            }
-            .btn-place {
-                width: 8rem;
+        .card{
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.35);
+            .card-body {
+                background-color: $p-grey-light;
+                .card-title {
+                    font-family: freight-micro-pro, serif;
+                    font-weight: 600;
+                }
+                .btn {
+                    @include font-btn;
+                    transition: background-color 0.5s, border-color 0.5s, color 0.2s;
+                }
+                .btn-place {
+                    width: 8rem;
+                }
             }
         }
-        
     }
     .where {
         iframe {
