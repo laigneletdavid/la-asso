@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr" class="container-fluid">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Pied à l'Objectif est un club photo basé à Monstaunes sur la communauté du Cagire Garonne Salat. Sortie photo - Stage photo - Atelier thématiques">
+    <meta name="googlebot" content="none">
+    <meta name="googlebot-news" content="nosnippet">
+
+    <title>Le Pied à l'Objectif</title>
+
+    <link rel="stylesheet" href="/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/skf2lbk.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="container-page d-flex">    
+            <nav class="navbar d-flex justify-content-between container-fluid">
+                <a href="<?= ROOT_URL ?>/index.php" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
+                        <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                        <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                    </svg>
+                    Le Pied à l'Objectif
+                </a>
+
+                <div class="menu header-desk-view">
+                    <ul class="navbar-nav flex-row justify-content-between align-items-center container-fluid hstack gap-3">
+                        <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php?page=event">évenements</a></li>
+                        <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#wipModal">blog</a></li>
+                        <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-mobile-view">
+                    <button class="btn btn-primary btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <span class="offcanvas-title" id="staticBackdropLabel">Le Pied à l'Objectif</span>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column align-items-start container-fluid hstack gap-3">
+                <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php">accueil</a></li>
+                <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php?page=event">évenements</a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#wipModal">blog</a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">contact</a></li>
+            </ul>
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container-page">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="<?= ROOT_URL ?>/index.php">Accueil</a></li>
+                    <li class="breadcrumb-item"><a href="#">Evènements</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sortie montage de printemps</li>
+                </ol>
+            </nav>
+
+            <article class="event">
+                <div class="event-header d-flex flex-column align-items-center mb-5">
+                    <h2 class="event-title mb-3">Sortie montage de printemps</h2>
+                    <img src="<?= ROOT_URL ?>/documents/images/event.JPG" alt="" class="event-picture">
+                </div>
+
+                <nav id="navbar-event" class="nav-scroll navbar bg-secondary p-2 text-dark bg-opacity-50 px-3 mb-3">
+                    <ul class="nav nav-pills d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyWhat">Description</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyWho">Qui ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyWhen">Quand ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyWhere">Où ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyHow">Comment ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#scrollspyReserv">Réserver</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div data-bs-spy="scroll" data-bs-target="#navbar-event" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-event bg-light p-3 rounded-2" tabindex="0">
+                    <div class="event-what d-flex flex-column mb-4">
+                        <h3 class="event-what-title title-page">Description de la sortie</h3>
+                        <p class="event-text">Comme tous les ans, nous organisons une première sortie photo en montagne pour prendre l'air après les mois d'hiver. Cette année il n'y a pas de thème ou de technique inposé, chacun de nous pourras faire les photos qu'il désire, paysage, macro, portrait,...</p>
+                        <p class="event-text">Une dizaine de jours après cette sortie, nous ferons évidement une soirée spéciale pour projeter les photos comme nous en avons l'habitude, je vous préviendrai à l'avance.</p>
+                        <p class="event-text"  id="scrollspyWhat">Afin de préserver la montage et garder des espaces vides et vièrges, nous avons décidé de limiter à 30 participants cette année, alors pensez à réserver vos palces !</p>
+                    </div>
+                    <div class="event-who d-flex flex-column  mb-4">
+                        <h3 class="event-who-title title-page">Qui est concerné ?</h3>
+                        <p class="event-text"  id="scrollspyWho">Afin d'ajouter un peu de convivialité, de partage, et de la matière pour les portraitistes, nous proposons aux adhérents de venir en famille. </p>
+                    </div>
+                    <div class="event-when d-flex flex-column  mb-4">
+                        <h3 class="event-when-title title-page">Quand ?</h3>
+                        <p class="event-text"  id="scrollspyWhen">La sortie se fera le samedi 8 avril 2023 à 8h au point de rendez-vous. S'il doit y avoir des problèmes météo à cette date, nous prévoyons de la décaler au samedi 22 avril 2023 à 8h même heure, même lieu.</p>
+                    </div>
+                    <div class="event-where d-flex flex-column  mb-4">
+                        <h3 class="event-where-title title-page">Où ?</h3>
+                        <iframe class="event-where-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23359.27886746731!2d0.880917983285591!3d42.959103970505765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a8e9bb04a07349%3A0x6e224c4f0134cacc!2sparking%20de%20la%20fontaine%20de%20l&#39;ours!5e0!3m2!1sfr!2sfr!4v1667455257160!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p class="event-text">Nous irons au col de la Paloumère au dessus d'Arbas. Vous trouverez sur la carte le point de rendez-vous qui est le parking du départ de la randonnée.</p>
+                        <p class="event-text"  id="scrollspyWhere">Nous vous laissons gérer ensemble le covoiturage pour ceux qui le désire.</p>
+                    </div>
+                    <div class="event-how d-flex flex-column  mb-4">
+                        <h3 class="event-how-title title-page">Déroulement de la journée</h3>
+                        <p class="event-text">Une fois que nous nous serons tous retrouvés au parking, il faudra faire une petite randonnée sur chemin carrossable (4x4) d'environ 1h, c'est très facile, pour rejoindre l'estive de la Paloumère, notre camp de base pour la journée. De ce point les plus courageux et sportifs pourront rejoindre les crètes pour de plus beaux paysages.</p>
+                        <p class="event-text">Prévoyez un pique-nique pour le midi, l'association ne fournira pas le repas ni les boissons.</p>
+                        <p class="event-text">Une fois arrivée sur l'estive, chacun sera libre de faire ce qu'il veux, nous souhaitons juste nous retrouver tous à 12h30 pour partager le repas ensemble.</p>
+                        <p class="event-text">Pour l'après-midi chacun sera également libre d'aller où bon lui semble et de faire les photos qu'il désire, et le retour commun se fera à 16h pour être au parking à 17h.</p>
+                        <p class="event-text"  id="scrollspyHow">Cependant, pour ceux qui le désire, vous pourrez rester plus longtemps, voir y passer la nuit. Ce sera l'occasion de faire de très belles photos de coucher de soleil, la vue est dégagée, ou de ciel nocturne (si la météo le permet). Par contre pour ceux qui décident de rester l'association déclinera toute respoinsablilité en cas d'accident, et vous devrez prévoir votre matériel de bivouac.</p>
+                    </div>
+                    <div class="event-btns d-flex flex-row justify-content-between justify-content-md-evenly hstack gap-3  mb-5" id="scrollspyReserv">
+                        <button class="btn btn-secondary event-btn" data-bs-toggle="modal" data-bs-target="#contactModal"><a href="#">renseignements</a></button>
+                        <button class="btn btn-secondary event-btn" data-bs-toggle="modal" data-bs-target="#reservModal"><a href="#">reserver</a></button>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <div class="modal-content">
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Contactez-nous</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" method="post" class="modal-contact">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="firstname" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Sujet</label>
+                                <input type="text" class="form-control" id="subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Votre message</label>
+                                <textarea class="form-control" id="message" rows="6"></textarea>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                                <button type="submit" id="contact" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="wipModal" tabindex="-1" aria-labelledby="wipModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Dev in Progress</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row align-items-center vstack gap-3">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                            <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
+                        </svg>
+                    </div>
+                    <div>
+                    <p class="modal-body-text">Nous sommes désolés mais cette partie est encore en développement !</p>  
+                    <p class="modal-body-text">Nous faisons tout notre possible pour qu'elle soit rapidement opérationnelle, merci de votre compréhention.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reservModal" tabindex="-1" aria-labelledby="reservModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Réservation</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="modal-contact">
+                        <div class="mb-3">
+                            <label for="outing" class="form-label">Sortie</label>
+                            <input type="text" class="form-control" id="outing" placeholder="Sortie montage de printemps" disabled>
+                        </div>
+                        <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="attendees" class="form-label">Nombre de participants</label>
+                            <input type="int" class="form-control" id="attendees">
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Informations complémnetaires</label>
+                            <textarea class="form-control" id="data" rows="3"></textarea>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                            <button type="submit" id="reserv" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-page d-flex flex-column justify-content-center align-items-center hstack gap-3">
+            <div class="footer-developer d-flex flex-column align-items-center flex-md-row">
+                <span><span class="name">Laignelet David</span> - Développeur web en formation</span>
+                <span class="footer-text ms-2">Tous droits réservés &#169;</span>
+            </div>
+            <div class="footer-data d-flex flex-column align-items-center hstack gap-3">
+                <div class="footer-study-content d-flex flex-column flex-md-row align-items-center">
+                    <span>Coched by</span><a href="https://www.studi.com/fr" target="blank"><img src="<?= ROOT_URL ?>/documents/images/studi.png" alt="" class="studi"></a>
+                </div>
+                <span class="footer-source">Source photos : Laignelet David & www.pixabay.com</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr" class="container-fluid">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Pied à l'Objectif est un club photo basé à Monstaunes sur la communauté du Cagire Garonne Salat. Sortie photo - Stage photo - Atelier thématiques">
+    <meta name="googlebot" content="none">
+    <meta name="googlebot-news" content="nosnippet">
+
+    <title>Le Pied à l'Objectif</title>
+
+    <link rel="stylesheet" href="/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/skf2lbk.css">
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+    
+    
+</head>
+<body>
+    <header class="header container-fluid">
+        <div class="container-page d-flex">    
+            <nav class="navbar d-flex justify-content-between container-fluid">
+                <a href="<?= ROOT_URL ?>/index.php" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
+                        <path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
+                        <path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
+                    </svg>
+                    Le Pied à l'Objectif
+                </a>
+
+                <div class="menu header-desk-view">
+                    <ul class="navbar-nav flex-row justify-content-between align-items-center container-fluid hstack gap-3">
+                        <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php?page=event">évenements</a></li>
+                        <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#wipModal">blog</a></li>
+                        <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-mobile-view">
+                    <button class="btn btn-primary btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <span class="offcanvas-title" id="staticBackdropLabel">Le Pied à l'Objectif</span>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-column align-items-start container-fluid hstack gap-3">
+                <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php">accueil</a></li>
+                <li class="nav-item"><a href="<?= ROOT_URL ?>/index.php?page=event">évenements</a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#wipModal">blog</a></li>
+                <li class="nav-item"><a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">contact</a></li>
+            </ul>
+        </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container-page">
+
+            <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="<?= ROOT_URL ?>/documents/carousel/london-1200.jpg" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="<?= ROOT_URL ?>/documents/carousel/street-1200.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="<?= ROOT_URL ?>/documents/carousel/paris.jpg" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev carousel-control" href="#carouselExampleControls" role="button" data-bs-slide="prev" data-bs-target="#carouselExampleControls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
+                        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
+                    </svg>
+                </a>
+                <a class="carousel-control-next carousel-control" href="#carouselExampleControls" role="button" data-bs-slide="next" data-bs-target="#carouselExampleControls">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                        <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                    </svg>
+                </a>
+            </section>
+
+            <section class="word d-flex flex-column align-items-center">
+                <h2 class="word-title title-page">Faisons de la photo ensemble</h2>
+                <div class="word-content d-flex flex-column flex-md-row align-items-md-center">
+                    <div class="word-text-content">
+                        <p class="word-text">La pratique de la photographie est souvent une activité solitaire, mais quand c'est le cas, progresser demande du temps. Le but du Pied à l'Objectif est de pratiquer la photo à plusieurs afin de s'aider à progresser</p>
+                        <p class="word-text">L'association propose ses activités à tous et toutes et nous espérons bientôt ouvrir une section "Jeunes Photographes" afin d'acompagner des jeunes dans la pratique de la photographie.</p>
+                    </div>
+                    <img src="<?= ROOT_URL ?>/documents/images/word-photo.jpg" alt="Le pied à l'objectif - Faisons de la photo ensembel" class="word-img">
+                </div>
+            </section>
+
+            <section class="reinsurance d-flex flex-column align-items-center">
+                <h2 class="reinsurance-title title-page">Les actions de l'association</h2>
+                <div class="reinsurance-content-list">
+                    <ul class="reinsurance-list d-flex flex-column flex-md-row justify-content-between align-items-center hstack gap-3">
+                        <li class="reinsurance-item d-flew flex-column">
+                            <div class="reinsurance-content-title d-flex flex-row align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                    <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                                </svg>
+                                <h3 class="reinsurance-item-title">Sorties</h3>
+                            </div>
+                            <p class="reinsurance-item-text">De manière régulière, nous effecturons des sorties photo de groupe sur des thèmes différnets, nature, architecture, urbex,...</p>
+
+                        </li>
+                        <li class="reinsurance-item d-flew flex-column">
+                            <div class="reinsurance-content-title d-flex flex-row  align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera" viewBox="0 0 16 16">
+                                <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                                <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                            </svg>
+                                <h3 class="reinsurance-item-title">Stages</h3>
+                            </div>
+                            <p class="reinsurance-item-text">Les stages seront l'occasion de travailler des techniques de prise de vue et d'apprendfre à maîtriser son appareil photo</p>
+
+                        </li>
+                        <li class="reinsurance-item d-flew flex-column">
+                            <div class="reinsurance-content-title d-flex flex-row  align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                            </svg>
+                                <h3 class="reinsurance-item-title">Soirées</h3>
+                            </div>
+                            <p class="reinsurance-item-text">De manière hebdomadère, l'association organisera des soirées de projection, ou nous étudirons les photos prises lors des sorties ou des stages.</p>
+
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <article class="article d-flex flex-column align-items-center">
+                <h2 class="article-title title-page">Nos actualités</h2>
+                
+                <div class="article-content d-flex flex-column align-self-stretch flex-sm-row justify-content-around hstack gap-3">
+                    <div class="card">
+                        <img class="card-img-top" src="<?= ROOT_URL ?>/documents/images/event.JPG" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Sortie montage</h5>
+                            <p class="card-text">Comme tous les ans, nous organisons une première sortie photo en montagne pour prendre l'air après les mois d'hiver.</p>
+                            <a href="./index.php?page=event" class="btn btn-primary">En savoir +</a>
+                        </div>
+                    </div>
+            
+                    <div class="card" aria-hidden="true">
+                        <img class="card-img-top" src="<?= ROOT_URL ?>/documents/images/placeholder.jpg" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-1"></span>
+                                <span class="placeholder col-2"></span>
+                            </p>
+                            <a href="#" tabindex="-1" class="btn btn-primary disabled placeholder col-6 btn-place" data-bs-toggle="modal" data-bs-target="#wipModal"></a>
+                        </div>
+                    </div>
+                
+                </div>
+            </article>
+
+            <section class="where d-flex flex-column align-items-center">
+                <h2 class="where-title title-page">Où nous trouver ?</h2>
+                <div class="where-content d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1tEliw4LnaHsJPwBT9ELn9kPfbVSag7U&ehbc=2E312F" width="640" height="480"></iframe>
+                    <div class="where-text-content d-flex flex-column align-items-center">
+                        <p class="where-text">Le Pied à l'Objectif est basé à Montsaunes dans les Comminges. Situé aux pieds des Pyrénées, ce secteur nous offre un terrain de jeu vaste et varié, où chacun pourras laisser s'exprimer sa créativité.</p>
+                        <p class="where-text">Pour tout renseignements sur les activitées de l'association où pour y adhérer contactez-nous.</p>
+                        <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contactModal"><a href="#" class="where-contact">Contactez-nous</a></button>
+
+                        
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    
+    <div class="modal-content">
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">Contactez-nous</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" method="post" class="modal-contact">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="firstname" class="form-label">Prénom</label>
+                                <input type="text" class="form-control" id="firstname">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Adresse Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Sujet</label>
+                                <input type="text" class="form-control" id="subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Votre message</label>
+                                <textarea class="form-control" id="message" rows="6"></textarea>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                                <button type="submit" id="contact" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="wipModal" tabindex="-1" aria-labelledby="wipModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Dev in Progress</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-row align-items-center vstack gap-3">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cone-striped" viewBox="0 0 16 16">
+                            <path d="m9.97 4.88.953 3.811C10.159 8.878 9.14 9 8 9c-1.14 0-2.158-.122-2.923-.309L6.03 4.88C6.635 4.957 7.3 5 8 5s1.365-.043 1.97-.12zm-.245-.978L8.97.88C8.718-.13 7.282-.13 7.03.88L6.275 3.9C6.8 3.965 7.382 4 8 4c.618 0 1.2-.036 1.725-.098zm4.396 8.613a.5.5 0 0 1 .037.96l-6 2a.5.5 0 0 1-.316 0l-6-2a.5.5 0 0 1 .037-.96l2.391-.598.565-2.257c.862.212 1.964.339 3.165.339s2.303-.127 3.165-.339l.565 2.257 2.391.598z"/>
+                        </svg>
+                    </div>
+                    <div>
+                    <p class="modal-body-text">Nous sommes désolés mais cette partie est encore en développement !</p>  
+                    <p class="modal-body-text">Nous faisons tout notre possible pour qu'elle soit rapidement opérationnelle, merci de votre compréhention.</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="reservModal" tabindex="-1" aria-labelledby="reservModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Réservation</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" class="modal-contact">
+                        <div class="mb-3">
+                            <label for="outing" class="form-label">Sortie</label>
+                            <input type="text" class="form-control" id="outing" placeholder="Sortie montage de printemps" disabled>
+                        </div>
+                        <div class="mb-3">
+                                <label for="name" class="form-label">Nom</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="attendees" class="form-label">Nombre de participants</label>
+                            <input type="int" class="form-control" id="attendees">
+                        </div>
+                        <div class="mb-3">
+                            <label for="data" class="form-label">Informations complémnetaires</label>
+                            <textarea class="form-control" id="data" rows="3"></textarea>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Retour</button>
+                            <button type="submit" id="reserv" class="btn btn-primary">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-page d-flex flex-column justify-content-center align-items-center hstack gap-3">
+            <div class="footer-developer d-flex flex-column align-items-center flex-md-row">
+                <span><span class="name">Laignelet David</span> - Développeur web en formation</span>
+                <span class="footer-text ms-2">Tous droits réservés &#169;</span>
+            </div>
+            <div class="footer-data d-flex flex-column align-items-center hstack gap-3">
+                <div class="footer-study-content d-flex flex-column flex-md-row align-items-center">
+                    <span>Coched by</span><a href="https://www.studi.com/fr" target="blank"><img src="<?= ROOT_URL ?>/documents/images/studi.png" alt="" class="studi"></a>
+                </div>
+                <span class="footer-source">Source photos : Laignelet David & www.pixabay.com</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
