@@ -11081,6 +11081,7 @@ main .title-page {
   font-family: freight-micro-pro, serif;
   font-weight: 600;
   color: #F28907;
+  text-align: center;
 }
 main .word {
   background-color: #F2DDD0;
@@ -11226,6 +11227,7 @@ main .title-page {
   font-family: freight-micro-pro, serif;
   font-weight: 600;
   color: #F28907;
+  text-align: center;
 }
 main .event-text {
   margin: 0.5rem 1rem;
